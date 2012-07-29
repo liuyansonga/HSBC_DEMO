@@ -1,0 +1,68 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+
+	<style>
+
+	#myHost a{padding:2px;}
+
+	#myHost a:link,#myHost a:visited,#myHost a:active{text-decoration:none;color:#fff;border-radius:3px;background-color:#666;}
+
+	#myHost a:hover{text-decoration:none;color:#fff;border-radius:3px;background-color:#ccc;}
+
+	</style>
+
+	<script type="text/javascript" src="http://map.google.com/maps/api/js?sensor=false"></script>
+<script>   
+function showGoogleMap(){   
+    //调用获取当前地理位置对象，传入position   
+    navigator.geolocation.getCurrentPosition(function(position){   
+        //定义当前坐标   
+        var coords = position.coords;   
+        //以当前纬度、经度作为参数指定一个google地图上的坐标点   
+        var latlng = new google.maps.LatLng(   
+            coords.latitude,   
+            coords.longitude   
+        );   
+        var myOptions = {   
+            //放大倍数   
+            zoom: 14,   
+            //地图中心设为指定坐标点   
+            center: latlng,   
+            //地图类型   
+            mapTypeId: google.maps.MapTypeId.ROADMAP   
+        };   
+        //创建地图并输出到页面   
+        var myMap = new google.maps.Map(   
+            document.getElementById(“map”),myOptions   
+        );   
+        //创建标记   
+        var marker = new google.maps.Marker({   
+            //标注指定坐标点   
+            position: latlng,   
+            //设置在myMap地图中标注   
+            map: myMap   
+        });   
+        //设置标注窗口   
+        var infowindow = new google.maps.InfoWindow({   
+            //指定注释   
+            content:“当前位置<br/>纬度：”+   
+                coords.latitude+   
+                “<br/>经度：”+coords.longitude   
+        });   
+        //打开标注窗口   
+        infowindow.open(myMap,marker);   
+    });   
+}   
+</script>  
+
+
+</head>
+
+<body onload="showGoogleMap()">
+
+<div id="map" style="width:600px;height:600px;"></div>
+
+</body>
+
+</html>

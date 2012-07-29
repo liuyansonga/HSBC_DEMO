@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<script language="JavaScript">
+<!-- Begin
+function funGetDaysInMonth(theMonth, theYear) 
+{
+var thePrevDate = new Date(theYear, theMonth, 0);
+return thePrevDate.getDate();
+}
+function funMakeCalendar(theYear, theMonth) 
+{
+var myMonth = new Array();
+myMonth[0] = new Array(7);
+myMonth[1] = new Array(7);
+myMonth[2] = new Array(7);
+myMonth[3] = new Array(7);
+myMonth[4] = new Array(7);
+myMonth[5] = new Array(7);
+myMonth[6] = new Array(7);
+var CalendarDate = new Date(theYear, theMonth-1, 1);
+var iDayOfFirst = CalendarDate.getDay();
+var iDaysInMonth = funGetDaysInMonth(theMonth, theYear);
+var theDate = 1;
+var i, c, r;
+	myMonth[0][0] = "Sun";
+	myMonth[0][1] = "Mon";
+	myMonth[0][2] = "Tue";
+	myMonth[0][3] = "Wed";
+	myMonth[0][4] = "Thu";
+	myMonth[0][5] = "Fri";
+	myMonth[0][6] = "Sat";
+	for (c = iDayOfFirst; c < 7; c++) 
+	{
+	myMonth[1][c] = theDate;
+	theDate++;
+	}
+	for (r = 2; r < 7; r++) 
+	{
+		for (c = 0; c < 7; c++) 
+		{
+			if (theDate <= iDaysInMonth) 
+			{	
+			myMonth[r][c] = theDate;
+			theDate++;
+		    }
+	   	}
+	}
+return myMonth;
+}
+function funDrawCalendar(theYear, theMonth) 
+{
+var r,c;
+var myMonth;
+myMonth = funMakeCalendar(theYear, theMonth);
+document.write("<table border='0'>")
+document.write("<tr>");
+document.write("<td align='center' style='FONT-FAMILY:Arial;FONT-SIZE:12px;FONT-WEIGHT: bold'>" + myMonth[0][0] + "</td>");
+document.write("<td align='center' style='FONT-FAMILY:Arial;FONT-SIZE:12px;FONT-WEIGHT: bold'>" + myMonth[0][1] + "</td>");
+document.write("<td align='center' style='FONT-FAMILY:Arial;FONT-SIZE:12px;FONT-WEIGHT: bold'>" + myMonth[0][2] + "</td>");
+document.write("<td align='center' style='FONT-FAMILY:Arial;FONT-SIZE:12px;FONT-WEIGHT: bold'>" + myMonth[0][3] + "</td>");
+document.write("<td align='center' style='FONT-FAMILY:Arial;FONT-SIZE:12px;FONT-WEIGHT: bold'>" + myMonth[0][4] + "</td>");
+document.write("<td align='center' style='FONT-FAMILY:Arial;FONT-SIZE:12px;FONT-WEIGHT: bold'>" + myMonth[0][5] + "</td>");
+document.write("<td align='center' style='FONT-FAMILY:Arial;FONT-SIZE:12px;FONT-WEIGHT: bold'>" + myMonth[0][6] + "</td>");
+document.write("</tr>");
+	for (r = 1; r < 7; r++) 
+	{
+	document.write("<tr>")
+		for (c = 0; c < 7; c++) 
+		{
+		rowid="td"+r+c;
+		document.write("<td id="+rowid+" align=center valign=center width=30 height=30 style='CURSOR:Hand'>");
+			if (myMonth[r][c]>0) 
+			{
+			document.write("<font id=theDateText style='CURSOR:Hand;FONT-FAMILY:Arial;FONT-SIZE:13px;FONT-WEIGHT:bold'>" +  myMonth[r][c] + "</font>");
+			} 
+			else 
+			{
+			document.write("<font id=theDateText style='CURSOR:Hand;FONT-FAMILY:Arial;FONT-SIZE:13px;FONT-WEIGHT:bold'>"  + "&nbsp;</font>");
+			}
+		document.write("</td>")
+		}
+	document.write("</tr>");
+	}
+document.write("</table>")
+}
+function funUpdateCalendar(theYear, theMonth) 
+{
+var r,c;
+myMonth = funMakeCalendar(theYear, theMonth);
+	for (r = 1; r < 7; r++) 
+	{
+		for (c = 0; c < 7; c++) 
+		{
+		rowid="td"+r+c;
+			if (myMonth[r][c]>0) 
+			{
+			document.all[rowid].children[0].innerText=myMonth[r][c];
+			} 
+			else 
+			{
+			document.all[rowid].children[0].innerText="";			
+         	}
+      	}
+   	}
+}
+// End -->
+</script>
+<body leftmargin="60px">
+<form name="formCalendar">
+<table border="1">
+<tr>
+<td>
+<select name="SelectedMonth" onchange='funUpdateCalendar(formCalendar.SelectedYear.value, formCalendar.SelectedMonth.value)'>
+<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September&nbsp;&nbsp;&nbsp;&nbsp;</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option>
+</select>
+&nbsp;  
+<select name="SelectedYear" onchange='funUpdateCalendar(formCalendar.SelectedYear.value, formCalendar.SelectedMonth.value)'>
+<option value="1995">1995&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+</select>
+</td>
+</tr>
+<tr>
+<script language="JavaScript">
+<!-- Begin
+var CurrentDate = new Date();
+formCalendar.SelectedMonth.options[CurrentDate.getMonth()].selected = true;
+if(CurrentDate.getYear()<2000)
+CurrentYear="19"+CurrentDate.getYear();
+else
+CurrentYear=CurrentDate.getYear();
+for (i = 0; i < formCalendar.SelectedYear.length; i++)
+{
+if (formCalendar.SelectedYear.options[i].value ==CurrentYear )
+formCalendar.SelectedYear.options[i].selected = true;
+}
+//End -->
+</script>
+<td>
+<script language="JavaScript">
+var CurrentDate = new Date();
+funDrawCalendar(CurrentDate.getFullYear(), CurrentDate.getMonth()+1);
+</script>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

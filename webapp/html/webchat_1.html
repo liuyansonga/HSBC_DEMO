@@ -1,0 +1,50 @@
+<html>
+	<script language="javascript">
+		function sendmessagebyenter(val){
+			if (event.keyCode == 13) {
+				sendmessage(val);
+			}
+		}
+		function sendmessage(val) {
+			if (val) {
+				record.value += "\nYou: " + val;
+				record.value += "\nHost: I'm sorry, I'll return soon!"
+			}
+		}
+	</script>
+<body>
+
+<table>
+	<tr>
+		<td>
+			<a target=blank href=tencent://message/?uin=80000&Site=youcom/&Menu=yes>
+				<img border="0" SRC=http://wpa.qq.com/pa?p=1:80000:13 alt="contact me with QQ.">
+			</a>
+			<a href=msnim:chat?contact=cylwilliam@hotmail.com target="_blank">
+				<img src="../img/msnlogo.png" border="0" alt="contact me with MSN">
+			</a>
+			<a href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=298844386s">Webex</a> 
+		</td>
+	</tr>
+	<tr>
+		<td>Chat history:</td>
+	</tr>
+	<tr>
+		<td>
+			<textarea id="record" rows="25" cols="60" readonly="true" align="left" valign="top">--Hello, you are welcome!</textarea>
+		<td>
+	</tr>
+	<tr>
+		<td>
+			<input id="inputbox" type="text" size="50" onkeydown="sendmessagebyenter(inputbox.value);"/>
+			<input id="sendbutton" type="button" value="Send" onclick="sendmessage(inputbox.value);"/>
+		</td>
+	</tr>
+</table>
+
+	<a href="callto://cheylin@21cn.com"><img src="<A href="http://goodies.skype.com/graphics/skypeme_btn_green.gif"></a>
+	<script type="text/javascript" src="http://www.35tool.com/kf.aspx?cid=18850&uname=cheylin&uname=MyName&style=1"></script>
+
+</body>
+
+</html>

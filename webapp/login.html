@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6 ielt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7 ielt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+	<link rel="stylesheet"  href="css/style_login.css" />
+	<script src="js/login.js">
+	</script>
+</head>
+<body onload="javascript:createUserList();">
+	<table align="center">
+		<tr>
+			<td align="right" valign="center">
+				<p>
+				<div style="width:200px;height:380px; overflow-y:scroll;">
+				<table id="imglist">
+					<tr>
+						<td>
+							
+						</td>
+					</tr>
+				
+					
+				</table></div>
+			</td>
+			<td>
+				<div class="container">
+					<section id="content">
+						<form action="" onsubmit="">
+							<h1>Login Form</h1>
+							<div >
+								<img width="200px" height="200px" id="big_img" src="img/p_empty.png" pid=""/>
+							</div>
+							<div>
+								<input type="text" placeholder="Username" required="" id="username" />
+							</div>
+							<div>
+								<input type="password" placeholder="Password" required="" id="password" />
+							</div>
+							<div>
+								<label>Remember:</label>
+								<select name="slider2" id="slider2">
+									<option value="off">Off</option>
+									<option value="on" selected>On</option>
+								</select>
+							</div>
+							<div>
+								<input type="button" value="Log in" onClick="javascript:login();"/>
+								<a href="#">Lost your password?</a>
+								<a href="#">Register</a>
+							</div>
+						</form><!-- form -->
+					</section><!-- content -->
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

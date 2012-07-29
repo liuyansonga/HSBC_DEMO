@@ -1,0 +1,297 @@
+/**main*/
+
+/* General
+----------------------------------------------------------------------------------------------------*/
+
+html{}
+body{
+	/*background: url(../images/bg_diag_wood.jpg) center top repeat-x;*/
+	/*background-color: #421b0b;*/
+	/*behavior:url("csshover3.htc");*/
+	background: #DCDDDF url(../img/loginbg.png);
+}
+
+#wrapper{
+	width: 120px;
+}
+
+#main{
+	z-index: 10;
+}
+
+#main.omega{
+	margin-right: -10px !important;
+}
+
+#main.alpha{
+}
+
+#main .content{
+	width: 200px;
+	background-color: #fff;
+	padding:2px;
+	min-height: 300px;
+	height: 100%;
+	border: 1px solid #000;
+	margin-bottom: 5px;
+}
+
+#main .content img{
+	display: block;
+	margin: 0 auto 20px;}
+
+
+	
+.display_none{display: none;}
+
+.float_left{float: left;}
+.float_right{float: right;}
+	
+img.float_left{
+	margin-right:10px;
+}	
+img.float_right{
+	margin-left:10px;
+}
+	
+	
+/* Base Theme
+----------------------------------------------------------------------------------------------------*/
+.bar_nav ul,
+.side_nav ul{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #000;
+	background-color: transparent;
+}
+.bar_nav ul ul,
+.side_nav ul ul{
+	border:1px solid #666;
+}
+
+.bar_nav ul li a,
+.side_nav ul li a{
+	color: #666;
+	text-shadow: 0px 1px 0px #fff;
+	}
+.bar_nav ul li:hover > a,
+.side_nav ul li:hover > a{
+	color: #fff;
+	text-shadow: none;
+	}
+	
+.bar_nav > ul > li > a{
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #FFF;
+	border-left: 1px solid #ddd;
+}		
+	
+.bar_nav > ul > li.send_right > a{
+	border-left: 1px solid #FFF;
+	border-right: none;
+	}
+.bar_nav > ul > li.send_right:hover > a{border-right: none;}
+
+
+.bar_nav > ul > li:hover > a{
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid #888b90;
+	border-right: 1px solid #666;
+	border-left: 1px solid #666;
+	display: block;
+}
+.bar_nav > ul > li:first-child > a{border-left: none;}
+.bar_nav > ul > li:last-child > a{border-right: none;}
+
+
+.bar_nav ul li a,
+.side_nav ul li a{
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #fff;
+}
+.bar_nav ul li.active:last-child > a,
+.side_nav ul li.active:last-child > a{
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;	
+}
+
+li:last-child > div.accordion > a:last-child{
+	border-bottom: none;
+}
+
+.bar_nav ul li ul li:last-child > a:hover,
+.side_nav ul li ul li:last-child > a:hover{
+	border-bottom: 1px solid #888b90;
+}
+
+.bar_nav ul li ul li:first-child > a,
+.side_nav ul li ul li:first-child > a{
+	border-top: 0px solid transparent;
+}
+.bar_nav ul li ul li:first-child:hover > a,
+.side_nav ul li ul li:first-child:hover > a{
+	border-top: 0px solid #999;
+}
+.bar_nav ul ul li:hover > a,
+.side_nav ul li:hover > a{
+	border-bottom: 1px solid #888b90;
+	border-top: 1px solid #888;
+}
+
+.bar_nav > ul > li > ul li:first-child > a,
+.side_nav > ul li:first-child > a{
+
+}
+
+.bar_nav ul li:last-child ul a{
+	margin-bottom: 0px;
+}
+
+
+
+
+/* Gradients
+----------------------------------------------------------------------------------------------------*/
+.grad_grey,
+.bar_nav ul a,
+.side_nav ul a,
+.bar_nav ul,
+.side_nav ul,
+.drop_box{
+	background: #ffffff; /* old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #ededed 100%); /* firefox */
+	
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ededed)); /* webkit */
+	
+}
+
+.grad_grey_reverse,
+.bar_nav ul li:hover > a,
+.side_nav ul li:hover > a,
+ul li.openable.active > a{
+	background: #ddd; /* old browsers */
+	background: -moz-linear-gradient(top, #a0a3a8 0%, #888b90 100%); /* firefox */
+	
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a0a3a8), color-stop(100%,#888b90)); /* webkit */
+}
+
+
+/* Round Corners and text effects
+----------------------------------------------------------------------------------------------------*/
+
+.round_all{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+}
+
+.round_top{
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-radius: 3px 3px 0 0;
+}
+
+.round_bottom{
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-radius: 0 0 3px 3px;
+}
+	
+.round_left{	
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-radius: 3px 0 0 3px;
+}
+
+
+/*960*/
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_16 {
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100.0%;
+	text-align:left;
+	
+}
+
+
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_3{
+	display:inline;
+	float: left;
+	position: relative;
+	
+}
+
+
+
+
+/* Root Menu */
+.side_nav ul a {
+	padding: 0 10px;
+	display: block;
+	font: bold 12px sans-serif;
+	text-decoration: none;
+	white-space: nowrap;
+	line-height: 30px;
+}
+.side_nav ul a img{
+	margin: 5px 5px -12px -3px;
+	position: relative;
+	top:-2px;}
+
+
+
+
+
+/* Round corners
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+.side_nav ul li:first-child > a{
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.side_nav ul li:last-child > a{
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+
+dl, dt, dd, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+ol, ul {
+	list-style: none;
+}
