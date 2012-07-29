@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		170AD69115C1330A0052E0F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170AD69015C1330A0052E0F0 /* UIKit.framework */; };
+		170AD69315C1330A0052E0F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170AD69215C1330A0052E0F0 /* Foundation.framework */; };
+		170AD69515C1330A0052E0F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170AD69415C1330A0052E0F0 /* CoreGraphics.framework */; };
+		170AD69B15C1330A0052E0F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 170AD69915C1330A0052E0F0 /* InfoPlist.strings */; };
+		170AD69D15C1330A0052E0F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 170AD69C15C1330A0052E0F0 /* main.m */; };
+		170AD6A115C1330A0052E0F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 170AD6A015C1330A0052E0F0 /* AppDelegate.m */; };
+		170AD6A415C1330A0052E0F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 170AD6A315C1330A0052E0F0 /* ViewController.m */; };
+		170AD6A715C1330A0052E0F0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 170AD6A515C1330A0052E0F0 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		170AD68C15C1330A0052E0F0 /* hsbc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hsbc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		170AD69015C1330A0052E0F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		170AD69215C1330A0052E0F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		170AD69415C1330A0052E0F0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		170AD69815C1330A0052E0F0 /* hsbc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hsbc-Info.plist"; sourceTree = "<group>"; };
+		170AD69A15C1330A0052E0F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		170AD69C15C1330A0052E0F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		170AD69E15C1330A0052E0F0 /* hsbc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hsbc-Prefix.pch"; sourceTree = "<group>"; };
+		170AD69F15C1330A0052E0F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		170AD6A015C1330A0052E0F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		170AD6A215C1330A0052E0F0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		170AD6A315C1330A0052E0F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		170AD6A615C1330A0052E0F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		170AD68915C1330A0052E0F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				170AD69115C1330A0052E0F0 /* UIKit.framework in Frameworks */,
+				170AD69315C1330A0052E0F0 /* Foundation.framework in Frameworks */,
+				170AD69515C1330A0052E0F0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		170AD68115C1330A0052E0F0 = {
+			isa = PBXGroup;
+			children = (
+				170AD69615C1330A0052E0F0 /* hsbc */,
+				170AD68F15C1330A0052E0F0 /* Frameworks */,
+				170AD68D15C1330A0052E0F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		170AD68D15C1330A0052E0F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				170AD68C15C1330A0052E0F0 /* hsbc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		170AD68F15C1330A0052E0F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				170AD69015C1330A0052E0F0 /* UIKit.framework */,
+				170AD69215C1330A0052E0F0 /* Foundation.framework */,
+				170AD69415C1330A0052E0F0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		170AD69615C1330A0052E0F0 /* hsbc */ = {
+			isa = PBXGroup;
+			children = (
+				170AD69F15C1330A0052E0F0 /* AppDelegate.h */,
+				170AD6A015C1330A0052E0F0 /* AppDelegate.m */,
+				170AD6A215C1330A0052E0F0 /* ViewController.h */,
+				170AD6A315C1330A0052E0F0 /* ViewController.m */,
+				170AD6A515C1330A0052E0F0 /* ViewController.xib */,
+				170AD69715C1330A0052E0F0 /* Supporting Files */,
+			);
+			path = hsbc;
+			sourceTree = "<group>";
+		};
+		170AD69715C1330A0052E0F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				170AD69815C1330A0052E0F0 /* hsbc-Info.plist */,
+				170AD69915C1330A0052E0F0 /* InfoPlist.strings */,
+				170AD69C15C1330A0052E0F0 /* main.m */,
+				170AD69E15C1330A0052E0F0 /* hsbc-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		170AD68B15C1330A0052E0F0 /* hsbc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 170AD6AA15C1330A0052E0F0 /* Build configuration list for PBXNativeTarget "hsbc" */;
+			buildPhases = (
+				170AD68815C1330A0052E0F0 /* Sources */,
+				170AD68915C1330A0052E0F0 /* Frameworks */,
+				170AD68A15C1330A0052E0F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hsbc;
+			productName = hsbc;
+			productReference = 170AD68C15C1330A0052E0F0 /* hsbc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		170AD68315C1330A0052E0F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 170AD68615C1330A0052E0F0 /* Build configuration list for PBXProject "hsbc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 170AD68115C1330A0052E0F0;
+			productRefGroup = 170AD68D15C1330A0052E0F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				170AD68B15C1330A0052E0F0 /* hsbc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		170AD68A15C1330A0052E0F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				170AD69B15C1330A0052E0F0 /* InfoPlist.strings in Resources */,
+				170AD6A715C1330A0052E0F0 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		170AD68815C1330A0052E0F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				170AD69D15C1330A0052E0F0 /* main.m in Sources */,
+				170AD6A115C1330A0052E0F0 /* AppDelegate.m in Sources */,
+				170AD6A415C1330A0052E0F0 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		170AD69915C1330A0052E0F0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				170AD69A15C1330A0052E0F0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		170AD6A515C1330A0052E0F0 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				170AD6A615C1330A0052E0F0 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		170AD6A815C1330A0052E0F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		170AD6A915C1330A0052E0F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		170AD6AB15C1330A0052E0F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hsbc/hsbc-Prefix.pch";
+				INFOPLIST_FILE = "hsbc/hsbc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		170AD6AC15C1330A0052E0F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hsbc/hsbc-Prefix.pch";
+				INFOPLIST_FILE = "hsbc/hsbc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		170AD68615C1330A0052E0F0 /* Build configuration list for PBXProject "hsbc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				170AD6A815C1330A0052E0F0 /* Debug */,
+				170AD6A915C1330A0052E0F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		170AD6AA15C1330A0052E0F0 /* Build configuration list for PBXNativeTarget "hsbc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				170AD6AB15C1330A0052E0F0 /* Debug */,
+				170AD6AC15C1330A0052E0F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 170AD68315C1330A0052E0F0 /* Project object */;
+}
